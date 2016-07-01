@@ -10,3 +10,18 @@ gender enum('female','male')
 对应数字2，一次类推，最多两个字节，即65535个枚举选项量
 
 
+show databases;
+
+create database db_name;
+
+use db_name;
+
+create table tb_name(
+school varchar(10),
+name varchar(10),
+score int
+);
+
+insert into tb_name values(所有字段的值);
+insert into tb_name (字段列表) values (字段的值);
+
