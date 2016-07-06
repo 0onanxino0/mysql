@@ -25,3 +25,21 @@ score int
 insert into tb_name values(所有字段的值);
 insert into tb_name (字段列表) values (字段的值);
 
+drop table if exists classs;
+create table class(
+class_id int primary key auto_increment,
+class_name varchar(10) not null default 'php' comment 'class name'
+)character set utf8;
+
+drop table if exists student;
+create table student(
+stu_id int primary key auto_increment,
+stu_name varchar(10) not null default '',
+class_id int,
+foreign key (class_id) refereance class (class_id)
+)character set utf8;
+
+
+
+
+
